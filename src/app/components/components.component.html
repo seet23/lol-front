@@ -19,6 +19,52 @@
         <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
     </div>
     <div class="main">
+        <div class="container d-flex justify-content-center">
+            <div class="serviceTitle">
+                Our Services
+            </div>
+        </div>
+        <div class="col-md-10 mr-auto ml-auto">
+            <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" 
+        [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+            <ng-template ngbSlide *ngFor="let img of images; index as i">
+              <div class="carousel-caption">
+                <h3>My slide {{i + 1}} title</h3>
+              </div>
+                <div class="picsum-img-wrapper">
+                  <img [src]="img" alt="My image {{i + 1}} description">
+                </div>
+            </ng-template>
+          </ngb-carousel>
+        </div>
+        <div class="secondBanner mt-2 ">
+            <div class="row col-md-12 secondBannerBody">
+                <div class="col-md-6 ">
+                    <div class="animated">
+                        Our Events
+                    </div>
+                    <div class="bannerText">
+                        {{bannerText}}
+                    </div>
+                </div>
+                
+                <div class="navigation fixedContent col-md-6">
+                    <nav class="navbar navbar-expand-lg navbar-transparent">
+                        <div class="container">
+                            <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-transparent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-bar"></span>
+                                <span class="navbar-toggler-bar"></span>
+                                <span class="navbar-toggler-bar"></span>
+                            </button> -->
+                            <div class="collapse navbar-collapse" id="navbar-transparent">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+        </div>
+        
       <!-- <app-basicelements></app-basicelements> -->
       <!-- <app-navigation></app-navigation> -->
       <!-- <div class="section">

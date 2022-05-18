@@ -1,0 +1,68 @@
+.carousel-item {
+    display: block !important;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, visibility 1s;
+    visibility: hidden;
+}
+.carousel-item.active {
+    position: relative;
+    opacity: 1;        
+    transition: opacity 1.5s ease-in-out, visibility 1s;
+    visibility: visible;
+    
+}
+
+.serviceTitle{
+    font-size: 6em;
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+    text-shadow: 3px 1px #a59d9d;
+    font-family: 'Lobster Two', cursive;
+    margin: 0;
+    // background: #fbf8ec;
+    -webkit-background-clip: text;
+}
+
+.secondBanner{
+    background-color: #1b1a1a;
+    background-position: center center;
+    background-size: cover;
+    min-height: 90vh;
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.secondBannerBody{
+    width: 100%;
+}
+.fixedContent{
+    width: 60%;
+    margin: 10px 0 10px 0;
+    border-radius: 25px !important;
+}
+
+.animated{
+    transition: opacity 1.5s ease-in-out, visibility 1s;
+    margin: 10px auto;
+    font-size: 5em;
+    color: beige;
+    font-weight: 500;
+    text-shadow: 3px 1px #a59d9d;
+    font-family: 'Lobster Two', cursive;
+    letter-spacing: 5px;
+}
+
+.bannerText{
+    font-size: 1.4em;
+    color: whitesmoke;
+    margin: 0 2px 15px 0;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
